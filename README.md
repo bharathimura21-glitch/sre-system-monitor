@@ -16,3 +16,19 @@ This project is a Bash-based system monitoring tool.
 ## How to Run
 chmod +x *.sh
 ./monitor.sh
+
+
+
+## Sample Output
+
+========================================
+System Monitoring Report
+========================================
+
+CPU Usage: 30%
+CPU is normal
+
+Disk Usage: 40%
+Disk is healthy
+
+ssh is running
