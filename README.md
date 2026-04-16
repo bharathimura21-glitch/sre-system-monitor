@@ -1,23 +1,20 @@
 # SRE System Monitoring Tool
 
-This project is a Bash-based system monitoring tool.
+Built as part of SRE/DevOps preparation using Linux and Bash scripting.
+
+## Overview
+This project monitors system health and performs basic auto-healing actions.
 
 ## Features
-- CPU usage monitoring
-- Disk usage alert
+- CPU usage monitoring with alert
+- Disk usage monitoring
 - Service health check with auto-restart
 
-## Files
-- cpu_check.sh
-- disk_check.sh
-- service_check.sh
-- monitor.sh
-
-## How to Run
-chmod +x *.sh
-./monitor.sh
-
-
+## Scripts
+- cpu_check.sh → Monitors CPU usage
+- disk_check.sh → Checks disk utilization
+- service_check.sh → Verifies and restarts service
+- monitor.sh → Main script to execute all checks
 
 ## Sample Output
 
@@ -25,10 +22,16 @@ chmod +x *.sh
 System Monitoring Report
 ========================================
 
-CPU Usage: 30%
-CPU is normal
+CPU Usage: 75%
+⚠️ CPU is HIGH
 
 Disk Usage: 40%
-Disk is healthy
+✅ Disk is healthy
 
-ssh is running
+Service: ssh
+✅ Service is running
+
+## How to Run
+
+chmod +x *.sh
+./monitor.sh
